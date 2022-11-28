@@ -47,7 +47,9 @@ class Btn_Enviar(Botao):
                 note.play()
             except:
                 print("ERRO AO REPRODUZIR AUDIO")
-
             coluna:int = len(palavra) - 3 #palavra eh, aqui, a resposta certa dada pelo jogador
             area_resp_certas.digita(coluna, palavra)
             palavras_certas.remove(palavra)
+        else:
+            note = pyglet.resource.media("Assets/erro.wav")
+            note.play()   

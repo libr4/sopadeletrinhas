@@ -14,6 +14,7 @@ class Tela_jogo():
         self.letras_embaralhadas:list[str] = self.partida["letras_embaralhadas"]
         self.classe_letras_embaralhadas:list[Letra] = []
         self.campo_resposta:Campo_resposta = Campo_resposta(400, 160, 300, 70)
+        self.total_pa = Total_palavras(300,230,300,70)
         self.area_resp_certas:Area_respostas_certas = Area_respostas_certas(100, 240, 1150, 320)
         self.palavras_certas:list[str] = self.partida["palavras"]
         self.gera_letras_embaralhadas()
@@ -31,6 +32,7 @@ class Tela_jogo():
         self.__btn_enviar.draw()
         self.btn_deletar.draw()
         self.area_resp_certas.draw()
+        self.total_pa.draw()
         self.campo_resposta.draw()
         for letra in self.classe_letras_embaralhadas:
             letra.draw()
