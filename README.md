@@ -1,3 +1,5 @@
+## Para executar:
+No diretório raiz, use ```python3 main.py```
 # Sopa de Letrinhas
 
 Sopa de Letrinhas é um projeto da disciplina de Programação Orientada a Objetos.
